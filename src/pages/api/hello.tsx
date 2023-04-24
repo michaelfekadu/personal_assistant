@@ -70,7 +70,7 @@ function generatePrompt(
       return `Compose an email from 'Sender' to 'Recipient' regarding the information outlined in 'Notes', and create a suitable email subject line. Please ensure that the email is written professionally and is grammatically correct. The names and text are as follows: Recipient: "${recipient}". Sender: "${sender}". Notes: "${text}".`;
 
     case "summarize":
-      return `Please summarize the key points and essential details covered in 'My Text'. Your summary should include relevant information on the topic, key arguments or ideas presented, and any notable insights or conclusions. Please ensure that your summary is clear, concise, and accurately captures the main points of the text. Here is the text for your reference: "${text}"`;
+      return `Please summarize the key points and essential details covered in 'My Text'. Your summary should include relevant information on the topic, key arguments or ideas presented, and any notable insights or conclusions. Please ensure that your summary is clear, concise, and accurately captures the main points of 'My Text'. My Text: "${text}"`;
 
     default:
       return `Please repeat after me: Excuse me, ${type} is not a Job I offer.`;

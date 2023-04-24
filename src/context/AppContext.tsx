@@ -47,7 +47,7 @@ export function AppWrapper({ children }: any) {
       const recipient = getRecipient(job);
       const sender = getSender(job);
       const setLoading = getSetLoading(job);
-      if (enhanceTextInput !== "") {
+      if (textInput !== "") {
         setLoading("IsLoading");
       }
       const response = await fetch("/api/hello", {
